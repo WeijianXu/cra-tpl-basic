@@ -1,0 +1,78 @@
+@import './variants';
+
+/** 解决正式环境下 Firefox 下 selector 的箭头点击不生效问题 */
+.app {
+  .ant-select-selector {
+    // 若要定制背景色，在 .ant-select 上定制
+    background-color: transparent !important;
+    z-index: 1;
+  }
+
+  .ant-btn-primary[disabled] {
+    &,
+    &:hover,
+    &:active {
+      background-color: $intl-sub-blue;
+      opacity: 0.3;
+      color: $white;
+    }
+  }
+  // pagination
+  .ant-pagination {
+    font-size: $font-size-small;
+    .ant-select {
+      font-size: $font-size-small;
+    }
+    .ant-select-item {
+      font-size: $font-size-small;
+      line-height: 1.5;
+    }
+    :not(.ant-select-customize-input).ant-select-single .ant-select-selector {
+      height: $pagination-item-size;
+      .ant-select-selection-search-input {
+        height: $pagination-item-size;
+      }
+      .ant-select-selection-item {
+        line-height: $pagination-item-size - 2px;
+      }
+    }
+  }
+  .ant-pagination-options-quick-jumper {
+    height: $pagination-item-size;
+    line-height: $pagination-item-size;
+    input {
+      height: $pagination-item-size;
+      padding: 4px 12px;
+      font-size: $font-size-small;
+    }
+  }
+
+  .ant-pagination-item-active {
+    background: #007df1;
+    a {
+      color: #fff;
+    }
+    &:hover {
+      a {
+        color: #fff;
+      }
+    }
+  }
+  .ant-breadcrumb > span:last-child {
+    color: #333;
+  }
+  .ant-collapse
+    > .ant-collapse-item
+    > .ant-collapse-header
+    .ant-collapse-arrow {
+    position: relative;
+    top: 2px;
+    padding: 0;
+  }
+}
+
+// 修复 IE10 下，下拉框中选项没有竖排
+.ant-select-dropdown div[id^='rc_select_'] + div > div > div {
+  display: flex;
+  flex-direction: column;
+}

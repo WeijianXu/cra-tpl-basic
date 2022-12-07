@@ -1,0 +1,19 @@
+@import '../../../theme';
+
+.noResultWrap {
+  height: 354px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  img {
+    max-width: 218px;
+    margin-bottom: 10px;
+  }
+  span {
+    font-size: 14px;
+    color: $subsidiary-color;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}

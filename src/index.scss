@@ -1,0 +1,12 @@
+@import '~@csstools/normalize.css'; /* bring in normalize.css styles */
+/* rest of app styles */
+// 引入定制化样式
+@import './theme/base.scss';
+@import './theme/customicAntD.scss';
+
+#root {
+  height: 100%;
+}
+.gray-scale {
+  filter: grayscale(1);
+}

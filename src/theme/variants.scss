@@ -1,0 +1,69 @@
+/**
+ * 基础样式全局文件，兼容旧框架
+ * 保持和 custom-view.less 中变量名和设置值一致
+ **/
+/* $start 本系统特有的规范定义 */
+
+$pre: 'zjfw-';
+
+// 间距大小
+$gap: 24px; // 24px
+$gap-medium: 20px; // 20px
+$gap-sm: 16px; // 20px
+
+// 布局变量
+$layout-padding: 10px;
+$layout-width: 1200px + $layout-padding * 2;
+$shadow-y: 6px;
+
+/* $end 本系统特有的规范定义 */
+
+$primary-color: #1890ff;
+
+$success-color: #19be6b;
+
+$warning-color: $medium-hign-risk;
+$error-color: $high-risk;
+
+$subsidiary-color: #999999;
+
+$white: #fff;
+$black: #000;
+// end
+/** 本系统中常用的变量 **/
+$zj-text-color: #5e6c84;
+// end
+
+// // Base
+$title-color: #344563;
+$text-color: #333333;
+$text-second-color: #666666;
+$text-third-color: #999999;
+$text-light-color: #bbbbbb;
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-large: 18px;
+$font-size-extra-small: 12px;
+$border-radius-base: 4px;
+$border-radius-small: 2px;
+
+// // Border color
+$border-color-base: #eaeaea; // outside
+$border-color-split: #eeeeee; // inside
+
+// // Background color
+$background-color-base: #f7f7f7;
+
+$table-thead-bg: #fafafa;
+
+// // Button
+$btn-disable-color: #999999;
+$btn-border-radius: 2px;
+$btn-border-radius-small: 1px;
+
+// // Layout and Grid
+$layout-header-background: #1565a7;
+$layout-header-height: 4.5rem; // 72px;
+$layout-body-background: #f8f8f8;
+
+$pagination-item-size: 30px;

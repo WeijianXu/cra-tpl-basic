@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="SiteName"
+      content="浙江省人民政府 浙江政务服务网 浙江省“互联网+监管”|服务门户"
+    />
+    <meta name="SiteDomain" content="jg.zjzwfw.gov.cn" />
+    <meta name="SiteIDCode" content="3300000069" id="SiteIDCode" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>浙江省“互联网+监管”|服务门户</title>
+    <meta name="theme-color" content="#FAF7FA" />
+    <script src="//zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web1/site/script/zjservice/resources/index1/js/jquery.min.js"></script>
+    <!-- <script>
+      var cookie = document.cookie;
+      if (!cookie.includes('ariaStatus')) {
+        document.cookie = `ariaStatus=false;${cookie}`;
+      }
+    </script> -->
+    <style>
+      #version-warning {
+        display: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: #ff5614;
+        text-align: center;
+        margin: auto;
+        height: 5rem;
+        vertical-align: middle;
+        margin-top: 4rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <script src="//zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web1/site/script/1308/2109061849141316.js"></script>
+    <div id="root" class="app">
+      <div id="version-warning">
+        您的浏览器版本太低，页面加载失败，请更新至最新浏览器！
+      </div>
+    </div>
+
+    <script>
+      // 一秒钟后，页面还没有加载出来，则会显示版本提醒
+      var ver = document.getElementById('version-warning');
+
+      if (ver) {
+        setTimeout(
+          () => {
+            ver.style.display = 'block';
+          },
+
+          3000
+        );
+      }
+    </script>
+    <!-- This HTML file is a template. If you open it directly in the browser, you will see an empty
+    page. You can add webfonts, meta tags, or analytics to this file. The build step will place the
+    bundled scripts into the <body>tag. To begin the development,
+    run `npm start` or `yarn start`. To create a production bundle,
+    use `npm run build` or `yarn build`. -->
+    <!-- IE11 mode 10下能打开控制台，调试代码，需要下面垫片。将下面两个脚本打开，则可以进行调试 -->
+    <!-- <script type="text/javascript"
+        src="//cdn.bootcdn.net/ajax/libs/es6-shim/0.35.5/es6-sham.min.js">
+        </script>
+        <script type="text/javascript"
+          src="//cdn.bootcdn.net/ajax/libs/es6-shim/0.35.5/es6-shim.min.js"></script>-->
+  </body>
+</html>

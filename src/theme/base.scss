@@ -1,0 +1,21 @@
+@import './mixins';
+@import './variants';
+
+.flex-center {
+  @include flex();
+}
+
+.text-ellipsis {
+  @include textEllipsis();
+}
+.highlight {
+  @include highlight($primary-color);
+}
+
+.text-clip-2 {
+  @include text-clip(2);
+}
+
+.text-clip-3 {
+  @include text-clip(3);
+}

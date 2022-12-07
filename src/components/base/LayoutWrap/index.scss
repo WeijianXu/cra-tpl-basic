@@ -1,0 +1,20 @@
+@import '../../../theme';
+
+.layoutWrap {
+  background-color: $layout-body-background;
+  position: relative;
+  min-width: $layout-width - 300px;
+  .layoutContentWrap {
+    // position:relative;
+    width: 100%;
+    max-width: $layout-width;
+    min-width: $layout-width - 300px;
+    position: relative;
+    margin: auto;
+    padding: 32px $layout-padding;
+    // margin: 0 calc(50% - 600px);
+    & > .ant-breadcrumb {
+      margin-top: -12px;
+    }
+  }
+}
